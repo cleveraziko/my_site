@@ -15,10 +15,14 @@
 
 <body>
 
+
+
+
+
     <header id="main-navigation">
-        <h2><a href="">Azamat's Blog</a></h2>
+        <h2><a href="{% url 'starting-page' %}">Azamat's Blog</a></h2>
         <nav>
-            <a href="">All Posts </a>
+            <a href="{% url 'posts-page' %}">All Posts </a>
         </nav>
     </header>
     {% block content  %}{% endblock  %}
