@@ -20,8 +20,9 @@ My Blog
     <ul>
 
         <li>
+            {% for post in posts %}
             {% include "blog/includes/post.html" %}
-
+            {% endfor %}
         </li>
 
     </ul>
