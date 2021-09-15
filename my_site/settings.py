@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'admin_interface',
+    'colorfield',
     'blog',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -121,3 +123,8 @@ UZ_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[BASE_DIR / "static"]
 
+MEDIA_ROOT = BASE_DIR / "uploads"
+MEDIA_URL = "/files/"
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+SILENCED_SYSTEM_CHECKS = ['security.W019']
